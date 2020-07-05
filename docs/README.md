@@ -174,19 +174,19 @@ These are pre-defined variables.
 `Syntax` \*\*variable add \<name> \<value>
 
 > Edit existing custom variable\
-`Syntax` \*\*variable edit \<name> \<new_value>\
+`Syntax` \*\*variable edit \<name> \<new_value>
 
 
 > View value of a custom variable\
-`Syntax` \*\*variable view \<name>\
+`Syntax` \*\*variable view \<name>
 
 
 > List of all custom variable\
-`Syntax` \*\*variable list\
+`Syntax` \*\*variable list
 
 
 > Delete a custom variable\
-`Syntax` \*\*variable remove \<name>\
+`Syntax` \*\*variable remove \<name>
 
 `Note : ` Making a variable with the name of a pre-defined variable will override it.
 
