@@ -114,11 +114,6 @@ Commands list, delete and see help
 \*\*approve \<command_name> - To approve a command\
 \*\*unapprove \<command_name> - To unapprove a command
 
-## Aliasing a command
-`Syntax` \*\*alias \<command_name> \<alias>\
-`Example` \*\*alias serverinfo si\
-> `serverinfo` command now aliased to `si`. And `**serverinfo` and `**si` will be same now. Deleting an alias is same as deleting a command.
-
 ## Editing command
 You can also edit command name, custom help for command and command owner.
 
@@ -139,15 +134,19 @@ You can also edit command name, custom help for command and command owner.
 **Note:** By changing owner to someone else you will loose ability to edit/delete the command.
 
 ## Aliasing command
+Aliasing a command will make it so executing the alias will execute the command.
+
 `Syntax` \*\*alias \<command_name> \<alias>\
-If you want 2 command do the same work alias the main command to another one.
 
 `Example` \*\*alias serverinfo si\
-Now `serverinfo` command has been aliases to `si`. `**si` and `**serverinfo` will do same. Any changes made on serverinfo command will be applied to all its aliases. A command can have unlimited aliases.
+The `serverinfo` command has been aliases to `si`. `**si` and `**serverinfo` will do same. Any changes made on serverinfo command will be applied to all its aliases. A command can have unlimited aliases.
+
+**Note:** You cannot edit a command alias, to have an alias do something else you must first delete the alias.
 
 ## Making command interactive
-Introducing variables. variables can help making command interactive with dynamic content that updates automatically.
+Introducing variables. Variables can help making command interactive with dynamic content that updates automatically.
 
+These are pre-defined variables. 
 `{user}` - Will mention the command author\
 `{user_id}` - Message author id\
 `{user_avatar}` - Message author avatar url\
@@ -172,24 +171,24 @@ Introducing variables. variables can help making command interactive with dynami
 
 ## Custom variable
 > To make own custom variable\
-**variable add \<name> \<value>
+`Syntax` \*\*variable add \<name> \<value>
 
 > Edit existing custom variable\
-**variable edit \<name> \<new_value>\
+`Syntax` \*\*variable edit \<name> \<new_value>\
 
 
 > View value of a custom variable\
-**variable view \<name>\
+`Syntax` \*\*variable view \<name>\
 
 
 > List of all custom variable\
-**variable list\
+`Syntax` \*\*variable list\
 
 
 > Delete a custom variable\
-**variable remove \<name>\
+`Syntax` \*\*variable remove \<name>\
 
-`Note : ` Making a variable already available in pre defined variables will override that.
+`Note : ` Making a variable with the name of a pre-defined variable will override it.
 
 > An example of dynamic custom command using variables.
 - Make a embed command named `serverinfo`. (\*\*embed serverinfo)
@@ -234,4 +233,4 @@ When on, executing commands won't require the prefix infront of the message.
 `Example` Command `test` | Sending just `test` will execute the command.
 You can still use commands with the prefix while NoPrefix is on.
 
-Reviewed and editited by Ali
+Reviewed and editited by Ali (treehousekingcomic)
