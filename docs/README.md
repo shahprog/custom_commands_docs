@@ -227,7 +227,7 @@ Some simple customization
 > The server prefix will be `+`
 
 If you want different prefix for bot and different for custom command that you made. You can do that.\
-`Syntax` \*\*ccprefix <new_prefix>\
+`Syntax` \*\*ccprefix \<new_prefix>
 
 By doing this custom commands will only work with the new prefix but bot commands will work with old prefix. If you dont want this you can reset.\
 `Syntax` \*\*ccprefix reset
